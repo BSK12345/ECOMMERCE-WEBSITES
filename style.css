@@ -1,0 +1,120 @@
+/* Container Part */
+.container-fluid{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+ } 
+ 
+/* header Part */
+ .container{
+  color: #fff;
+  background: #424040;
+ }
+ #btn{
+    background-color: #126785;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+ }
+ #btn a{
+  padding: 7px;
+ }
+ h2{
+    font-family: 'Tangerine', serif;
+    font-size: 70px;
+    color: chartreuse;
+    font-weight: 500;
+   }
+  .Scart{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: chartreuse;
+  }
+  .Scart:hover{
+    color: #84d4eb;
+  }
+  .button{
+   margin-top: 30px;
+   margin-left: 7rem;
+  }
+  .input-group{
+    margin-top: 30px;
+  }
+  .btnheader{
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+  ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  ul li a:hover{
+    background-color: rgb(80, 240, 110);
+    color: blue;
+    border-radius: 10%;
+  }
+  .btn:hover{
+    background-color: rgb(80, 240, 110);
+  }
+  h4{
+    border-bottom: 2px solid blueviolet;
+    width: 30%;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+/* Main Part */
+.main{
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/background image/pexels-robin-1020370.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main h5{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Tangerine', serif;
+  color: chartreuse;
+  font-weight: 500;
+  margin-top: 40%;
+}
+.main p{
+  text-align: center;
+  color: #fff;
+}
+
+/* Feature Part */
+.carousel-indicators button{
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+}
+.carousel-inner{
+  margin-bottom: 40px;
+}
+#ProductSlider{
+  margin-bottom: 20px;
+}
+
+/* Footer Part */
+.footer{
+  padding: 70px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px , rgba(201, 119, 119, 0.657) 0px 2px 4px inset;
+}
+.footer a:hover{
+  box-shadow: rgba(73, 227, 86, 0.647) 0px -3px 0px inset;
+  color: blue;
+}
+
+/* Media Query*/
+@media(max-width:1000px) {
+  .button{
+    margin-left: 0%;
+   }
+}

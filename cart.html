@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css"> <!-- css File -->
+    <link rel="stylesheet" href="product.css">
+    <style>
+        .cart-container {
+            margin-top: 50px;
+        }
+
+        .list-group-item h2 {
+            font-weight: 700;
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px , rgba(201, 119, 119, 0.657) 0px 2px 4px inset;
+
+        }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item-grid img {
+            max-width: 10rem;
+            height: auto;
+            align-items: center;
+        }
+
+        .quantity-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 40px;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .fa{
+            font-size: 1.5rem;
+        }
+
+        .card-body{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px , rgba(201, 119, 119, 0.657) 0px 2px 4px inset;
+        }
+
+        .card-header {
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px , rgba(201, 119, 119, 0.657) 0px 2px 4px inset;
+        }
+
+        .card-footer{
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px , rgba(201, 119, 119, 0.657) 0px 2px 4px inset;
+        }
+        .price {
+            word-spacing: 12rem;
+        }
+
+        .shipping {
+            word-spacing: 10rem;
+        }
+
+        .tprice {
+            word-spacing: 11.7rem;
+        }
+
+        .check {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="container cart-container product-grid">
+        <div class="row">
+            <!-- Item List Section -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h2 class="text-center">Items in Cart</h2>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-grid">
+                            <!-- Column1 : Product image -->
+                                <div class="col-md-4">
+                                    <img src="img/Kids/Kids12.jpg" alt="Product Image">
+                                </div>
+                                <!-- Column2 : Product Detils-->
+                                <div class="col-md-4">
+                                    <div class="card-text">
+                                        <h6>Mini Dress</h6>
+                                        <p>Price: $50</p>
+                                    </div>
+                                    <button class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        Delete
+                                    </button>
+                                </div>
+                                <!-- Column3 : Quantity Form -->
+                                <div class="col-md-4">
+                                    <div class="quantity-form">
+                                        <i class="fa fa-minus-square" aria-hidden="true"></i>
+                                        <input type="text" class="quantity-input">
+                                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!-- Summary section -->
+                    <div class="col-md-4">
+                        <div class="card summary-card">
+                            <div class="card-header text-center">Summary</div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="price">Cost $50</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="shipping">Shipping $5</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="tprice">Total $55</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary  w-100 check">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <footer></footer>
+        <script src="Dynamicheaderfooter.js"></script>
+</body>
+
+</html>

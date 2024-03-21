@@ -1,0 +1,33 @@
+h3{
+    border: 1px outset blue;
+    background-image: linear-gradient(to bottom left,rgba(200, 186, 196, 0.9),rgba(20, 21, 21, 0.7),rgba(87, 80, 98, 0.8));
+    color: #FFF5EE;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: rgba(27, 229, 84, 0.69) 0px 2px 4px, rgba(195, 45, 45, 0.928) 0px 7px 13px -3px, rgba(243, 226, 39, 0.576) 0px -3px 0px inset;
+}
+.product-grid {
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+.product-card {
+    margin-bottom: 20px;
+    width: 15rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+.product-card img{
+   max-width: 100%;
+   height: 200px;
+}
+.product-card a:hover{
+    background-color: blue;
+}
+.card-text{
+    font-weight:700;
+}
